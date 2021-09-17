@@ -14,10 +14,12 @@ import androidx.compose.ui.Modifier
 import androidx.compose.ui.tooling.preview.Preview
 import androidx.compose.ui.unit.dp
 import androidx.lifecycle.viewmodel.compose.viewModel
+import coil.annotation.ExperimentalCoilApi
 import coil.compose.rememberImagePainter
 import com.vijanaweusi.cocktailzapp.ui.theme.CockTailzAppTheme
 import com.vijanaweusi.model.response.CockTailsCategoryResponse
 
+@ExperimentalCoilApi
 @Composable
 fun CockTailsCategoriesScreen () {
     val viewModel: CockTailsCategoriesViewModel = viewModel()
@@ -31,6 +33,7 @@ fun CockTailsCategoriesScreen () {
     }
 }
 
+@ExperimentalCoilApi
 @Composable
 fun CockTailsCategory(cockTail: CockTailsCategoryResponse.CockTailsResponse) {
 
@@ -69,6 +72,7 @@ fun CockTailsCategory(cockTail: CockTailsCategoryResponse.CockTailsResponse) {
     }
 }
 
+@ExperimentalCoilApi
 @Preview(showBackground = true)
 @Composable
 fun DefaultPreview() {
